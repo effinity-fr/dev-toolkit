@@ -51,18 +51,6 @@ L'utilisation de `curl | bash` est très pratique, mais voici deux points à gar
 1. **Windows** : Cette commande fonctionne parfaitement dans **Git Bash**. Dans un PowerShell classique, la syntaxe serait différente, il est donc fortement conseillé d'utiliser l'environnement Git Bash.
 2. **Droits** : Si le script doit installer des paquets système (via `apt` ou `brew`), il pourra demander votre mot de passe administrateur en cours de route.
 
-### Une petite astuce de pro pour ton script
-
-Pour que la méthode `curl | bash` soit 100% fiable, assure-toi que ton script `setup.sh` ne contient pas de chemins relatifs (comme `source ./config.sh`) sans les gérer, car lorsqu'on l'exécute via curl, le script n'a pas de "répertoire de travail" local. Mais avec ton script actuel, tout est autonome, donc c'est **parfait**.
-
-**Ton repository `dev-toolkit` est maintenant prêt à être déployé ! Est-ce que tu veux que je t'aide à rédiger le premier message de commit ou à configurer un petit "Disclaimer" de sécurité au début du script ?**
-
-
-
-
-
-
-
 
 ### 2. Lancer le script
 
