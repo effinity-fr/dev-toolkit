@@ -6,7 +6,7 @@ Ce dépôt contient le script d'automatisation permettant de configurer un envir
 
 Le script `setup_dev_adk_python.sh` installe et configure :
 
-* **[uv](https://www.google.com/search?q=https://astral.sh/uv/)** : Gestionnaire Python ultra-rapide.
+* **[uv](https://astral.sh/uv/)** : Gestionnaire Python ultra-rapide.
 * **GitHub CLI (`gh`)** : Authentification simplifiée sans clés SSH.
 * **Cookiecutter** : Générateur de projets via templates.
 * **GCP Impersonation** : Accès sécurisé à Google Cloud sans fichiers de clés JSON.
@@ -94,6 +94,14 @@ Le script configure l'**Impersonation**. Cela signifie que vous utilisez vos ide
 
 * **Pas de fichiers `.json**` : Plus de risque de fuite de clés sur votre disque dur.
 * **Traçabilité** : On sait quel humain a utilisé le compte de service.
+
+---
+
+## 🔒 Sécurité et Confidentialité
+
+* **Transparence** : Le script est open-source. Nous vous encourageons à lire le contenu de `setup.sh` avant exécution pour comprendre les modifications apportées à votre système.
+* **Données sensibles** : Le script ne stocke aucun mot de passe. L'authentification GitHub et GCP se fait via les flux officiels (`gh auth` et `gcloud auth`) utilisant votre navigateur.
+* **Impersonation** : L'accès aux ressources GCP ne se fait pas via des clés statiques, mais par impersonation de compte de service, révocable à tout moment par l'administrateur.
 
 ---
 

@@ -1,5 +1,27 @@
 #!/bin/bash
 
+# ==============================================================================
+# ⚠️  DISCLAIMER / AVERTISSEMENT
+# ==============================================================================
+# Ce script est fourni par Effinity pour automatiser l'onboarding technique.
+# 
+# ACTIONS EFFECTUÉES :
+# - Installation d'outils (uv, gh cli, cookiecutter).
+# - Configuration locale de Git (user.name, user.email).
+# - Authentification GitHub et Google Cloud (Impersonation).
+#
+# PRÉ-REQUIS :
+# - Google Cloud CLI (gcloud) doit être installé.
+# - Un compte GitHub actif.
+#
+# UTILISATION :
+# Ce script modifie des configurations locales et installe des binaires.
+# L'utilisateur est responsable de l'exécution de ce script sur son poste.
+# ==============================================================================
+
+# Empêcher l'exécution si une erreur survient
+set -e
+
 echo "🚀 Préparation de l'environnement ADK - Python"
 
 # 1. Détection de l'OS
