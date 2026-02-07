@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Préparation de l'environnement ADK..."
+echo "🚀 Préparation de l'environnement ADK - Python"
 
 # 1. Détection de l'OS
 OS_TYPE="$(uname)"

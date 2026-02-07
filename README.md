@@ -4,7 +4,7 @@ Ce dépôt contient le script d'automatisation permettant de configurer un envir
 
 ## 📋 Ce que fait ce script
 
-Le script `setup.sh` installe et configure :
+Le script `setup_dev_adk_python.sh` installe et configure :
 
 * **[uv](https://www.google.com/search?q=https://astral.sh/uv/)** : Gestionnaire Python ultra-rapide.
 * **GitHub CLI (`gh`)** : Authentification simplifiée sans clés SSH.
@@ -26,15 +26,15 @@ Le script `setup.sh` installe et configure :
 **Sur macOS et Linux :**
 
 ```bash
-chmod +x setup.sh
-./setup.sh
+chmod +x setup_dev_adk_python.sh
+./setup_dev_adk_python.sh
 
 ```
 
 **Sur Windows (via Git Bash) :**
 
 ```bash
-./setup.sh
+./setup_dev_adk_python.sh
 
 ```
 
@@ -95,7 +95,7 @@ winget install --id GitHub.cli
 ```
 
 
-* Relancez ensuite le script `./setup.sh`.
+* Relancez ensuite le script `./setup_dev_adk_python.sh`.
 
 ### 🟢 Python non trouvé
 
