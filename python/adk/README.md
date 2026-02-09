@@ -26,7 +26,7 @@ Le script `setup_dev_adk_python.sh` installe et configure :
 Ouvrez votre terminal (ou Git Bash sur Windows) et lancez cette commande pour exécuter le script directement sans cloner le dépôt :
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/effinity-fr/dev-toolkit/refs/heads/main/adk-python/setup_dev_adk_python.sh | bash
+curl -sSL https://raw.githubusercontent.com/effinity-fr/dev-toolkit/refs/heads/main/python/adk/setup_dev_adk_python.sh | bash
 
 ```
 
@@ -36,7 +36,7 @@ Si vous préférez cloner le dépôt pour explorer les scripts :
 
 ```bash
 git clone https://github.com/effinity-fr/dev-toolkit.git
-cd dev-toolkit/adk-python
+cd dev-toolkit/python/adk/
 chmod +x setup_dev_adk_python.sh
 ./setup_dev_adk_python.sh
 
